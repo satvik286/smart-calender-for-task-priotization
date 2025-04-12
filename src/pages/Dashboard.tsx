@@ -59,6 +59,8 @@ const Dashboard = () => {
     const newTask = {
       id: Math.random().toString(36).substr(2, 9),
       title: taskText,
+      startTime: "12:00 PM", // Default start time
+      endTime: "1:00 PM",    // Default end time
       priority: "medium" as const,
       completed: false
     };
